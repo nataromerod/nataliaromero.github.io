@@ -1,0 +1,299 @@
+@media screen and (max-width: 500px){
+
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    header{
+        display: flex;
+        height: 44px;
+        margin: 0%;
+        padding: 0;
+        align-content: center;
+    }
+    header .logo{
+        height: 40%;
+        width: 40%;
+        margin: 0%;
+        padding: 0%;
+        margin-left: 0%
+    }
+
+    .menu{
+        margin-top: 2%;
+        text-align: right;
+        align-items: center;
+    }
+
+    .menu ul{
+        position: absolute;
+        margin-top: 2.5%;
+        display: none;
+        right: 0;
+        padding: 0;
+        width: 100%; 
+    }
+      
+    .menu input:checked  ~ ul{
+        display:block;
+    }
+      
+    .menu input{
+        display: none;
+    }
+      
+    .open{
+        color: #060A24;
+        box-sizing: border-box;
+        border: none;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+
+    .close{
+        display: none;
+    }
+      
+    /* Estilo del boton cuando se pasa el mouse por encima*/
+    /* .menu .open :hover{
+        display: none;
+    }  */
+
+    .menu .close:hover{
+        display: block;
+    }
+     
+    .menu ul li{
+        text-align: left;
+        display: block;
+        background: #0000eb;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+
+    }
+
+    input:checked ~ .open {
+        display: none;
+    }
+    
+    input:checked ~ .close {
+        display: block;
+        color: black;
+    }
+      
+    /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    .menu ul li:hover{
+        filter: brightness(110%);
+    }
+
+    .menu ul li a{
+        color: #FFFFFF;
+    }
+
+               /*ARTICLE*/
+
+    article{
+        padding: 0%;
+        margin-left: 6%;
+        /* width: 100%; */
+        margin-right: 0%;
+        margin-top: 5%;
+    }
+
+    article h1{
+        font-size: 36px;
+        margin-top: 5%;
+    }
+
+    article h1 span{
+        color: #060A24;
+    }
+
+    article p{
+        width: 100%;
+        font-size: 14px;
+        justify-items: center;   
+    }
+
+                            /* BUTTONS */
+
+    button{
+        margin-top: 10%;
+        margin-bottom: 8%;
+        width: 280px;
+        height: 43px;
+    }
+
+    button a{
+        font-size: 16px;
+    }
+
+                        /* EPISODES */
+
+    section .line-background{
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        width: 100%;  
+        height: 1270px;
+        display: flex;
+        justify-content: space-between;
+        clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+    }
+    
+    
+    #allEpisodes .episodes{
+        width: 100%;
+        font-size: 36px;
+        margin: 0;
+        padding-left: 5%;
+        padding-top: 60px;
+    }
+    
+    #allEpisodes .reproducers{
+        margin-top: 0%;
+        height: 100%;
+        margin-left: 2%;
+        justify-content: space-evenly;
+    }
+
+    #allEpisodes iframe{
+        margin-left: 2%;
+        width: 93.1%;
+        margin-bottom: 2%;
+    }
+
+                            /* NOSOTROS */
+
+    #nosotros{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        margin-top: 10%;
+    }
+
+    #nosotros .phone{
+        margin: 0%;
+        padding: 0%;
+        width: 99%;
+        height: 120%;
+        margin-left: 1%;
+    }
+
+    #nosotros .phone img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #nosotros .nosotros-content{
+        margin-left: 5%;
+    }
+
+    #nosotros .subtittle{
+        width: 90%;
+        letter-spacing: 0px;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    #nosotros .description{
+        width: 90%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+                    /* INVITADOS */
+
+    #invitados{
+        width: 100%;
+        margin: 0%;
+        margin-top: 40%;
+        display: block;    
+    }
+
+    #invitados P{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 32px;
+    }
+
+    .image-container{
+        flex-direction: column;
+    }
+
+    .image-container img{
+        width: 100%;
+    }
+
+                            /* TOPICS */
+
+    #topics{
+        width: 100%;
+        margin: 0%;
+    }
+
+    #topics .topics{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 36px;
+        justify-content: space-between;
+    }
+
+
+    #topics .topics-content{
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #topics .topics-content div{
+        width: 100%;
+        margin-top: 8%;
+    }
+
+    #topics .topics-content div h6{
+        font-size: 20px;
+    }
+
+                                /* NOVEDADES */
+
+
+    #novedades{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    #novedades .tittle-novedades{
+        font-size: 32px;
+        width: 100%;
+    }
+
+    #novedades button{
+        margin-top: 8%;
+        margin-left: 8%;
+    }
+
+                    /* FOOTER */
+
+    .footer{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .footer h3{
+        margin: 0%;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 14px;
+    }
+
+    .footer .a{
+        margin: 0%;
+        margin-left: 0px;
+    }
+
+}
